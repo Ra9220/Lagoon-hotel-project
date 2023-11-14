@@ -21,3 +21,207 @@ body {
     min-width: 1200px;
     font-family: "font", sans-serif;
 }
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Basic */
+.section-title {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.section-descr {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.list-reset {
+    padding: 0;
+    list-style: none;
+
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Header */
+
+.header-logo {
+    margin-right: auto;
+}
+
+.header-container{
+    align-items: center;
+}
+
+.header-top-left {
+    margin-right: 0 auto;
+    margin-bottom: 5px;
+}
+
+.header-top-right {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.header-nav-items:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.header-bottom-right-btn:not(:last-child) {
+    margin-right: 24px;
+
+}
+
+.header-nav-item {
+    margin-right: 45px;
+    outline: solid 1px coral;
+}
+
+.header-bottom-left{
+    margin-bottom: 70px;
+}
+
+/* Promo */
+
+.promo-content-list{
+    flex-wrap: wrap;
+}
+
+.promo-item-bigsize{
+
+}
+
+.promo-content-list-item {
+    flex-direction: column;
+    margin-right: 24px;
+    outline: solid 1px coral;
+}
+
+.promo-content-list-item:not(:nth-child(2n)){
+    margin-right: 24px;
+}
+
+.promo-list-title {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.price-content-item {
+    margin: 0;
+    margin-bottom: 47px;
+}
+
+.promo-content-list {
+    margin: 0;
+    margin-bottom: 70px;
+}
+
+/* About */
+
+.about {
+    margin: 0;
+    margin-bottom: 70px;
+    line-height: 25px;
+}
+
+/* Services */
+
+.services-content-list{
+    flex-wrap: wrap;
+}
+
+.section-title .service {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.services-content-list-item {
+    flex-direction: column;
+    width: 573px;
+    outline: solid 1px coral;
+    margin-bottom: 70px;
+}
+
+.services-content-list-item:not(:nth-child(2n)){
+    margin-right: 24px;
+}
+
+/* Advantages */
+
+.advantages-content-list{
+    flex-wrap: wrap;
+}
+
+.advantages-content-list-item{
+    flex-direction: column;
+    margin: 0;
+    width: 276px;
+    margin-bottom: 22px;
+    outline: solid 1px coral;
+}
+
+.advantages-content-list-item:not(:nth-child(4n)){
+    margin-right: 24px;
+}
+
+.advantages-text-descr{
+    text-align: center;
+    line-height: 15px;
+}
+
+/* Placement */
+.placement-content-list{
+    flex-wrap: wrap;
+}
+
+.placement-content-list-item{
+    flex-direction: column;
+    width: 374px;
+    margin-bottom: 24px;
+    outline: solid 1px coral;
+}
+
+.placement-content-list-item:not(:nth-child(3n)){
+    margin-right: 24px;
+}
+
+.price-placement-item{
+    margin-bottom: 16px;
+}
+
+.placement-item-title{
+    margin-bottom: 16px;
+}
+
+.placement-item-location{
+    margin-bottom: 20px;
+}
+
+.placement-rooms {
+    padding: 13px 20px;
+    border-color: coral;
+    margin-bottom: 45px;
+}
+
+
+
+
+
+
+
+
+
+
