@@ -59,25 +59,21 @@ body {
 /* Header top */
 
 .header-logo {
-    margin-left: auto;
+    /*margin-left: auto;*/
     margin-right: 40px;
 }
 
-.header-container{
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.header-top {
-    margin-right: 0 auto;
+.header-container-top-left{
+    outline: 1px solid coral;
     margin-bottom: 30px;
-    outline: solid 1px coral;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-.contact-phone-item {
-    margin-right: 2em auto;
+.header-top-right {
+    align-self: flex-end;
 }
+
 
 .header-nav-items:not(:last-child) {
     margin-bottom: 10px;
