@@ -18,6 +18,7 @@ img {
 }
 
 body {
+    background-color: #F1F1F1;;
     min-width: 1200px;
     font-family: "font", sans-serif;
 }
@@ -36,6 +37,12 @@ body {
 .section-title {
     margin: 0;
     margin-bottom: 40px;
+    color: #333;
+    font-family: Muller;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .section-descr {
@@ -60,53 +67,91 @@ body {
 
 .header-logo {
     margin-right: 40px;
+    width: 261px;
+    height: 54px;
+}
+
+.contact-phone-top{
+    color: #666;
+    font-family: Muller;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-items: center;
 }
 
 .header-container-top-left{
-    outline: 1px solid coral;
     margin-bottom: 30px;
+    margin-top: 30px;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
 }
 
 .header-top-right {
-    align-self: flex-end;
+    align-self: center;
+    justify-content: center;
 }
 
 
 /* Nav vs Btn */
 .header-nav {
-    outline: solid 1px coral;
     justify-content: space-between;
+    outline: solid 1px white;
+    border-radius: 15px;
+    background: #FFF;
     margin-bottom: 70px;
 }
 
 .nav-list-item {
+    color: #666;
+    font-family: Muller;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     margin-right: 45px;
-    outline: solid 1px coral;
 }
 
 .top-btn {
     justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
 }
 
 .btn-top-left-1{
-    width: 107px;
+    color: #CC9933;
+    min-width: 107px;
     height: 42px;
-    outline: 1px solid lightcoral;
     padding: 13px 20px;
     max-height: 42px;
+    border-radius: 10px;
+    border: 1px solid #C93;
 }
 
 .btn-top-left-2{
-    width: 177px;
+    color: #CC9933;
+    min-width: 177px;
     height: 42px;
-    outline: 1px solid lightcoral;
     padding: 13px 20px;
     min-height: 42px;
     text-align: center;
+    border-radius: 10px;
+    border: 1px solid #C93;
 }
 /* Promo */
+
+
+.section-title.promo{
+    /*color: #333;*/
+    /*font-family: Muller;*/
+    /*font-size: 40px;*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*line-height: normal;*/
+}
+
 .promo-content-list{
     flex-wrap: wrap;
     flex-direction: column;
@@ -115,30 +160,93 @@ body {
     gap: 24px;
     justify-content: flex-start;
     align-items: stretch;
+    margin-bottom: 70px;
 }
 
-.promo-content-list-item{
+.promo-content-list-item1{
     flex-direction: column;
     justify-content: center;
     padding-left: 30px;
     min-width: 573px;
     min-height: 258px;
-    outline: 1px solid coral;
+    color: #FFFFFF;
     flex-grow: 0;
+    background: url(/img/darken.png), url(/img/promo-img1.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.promo-item-bigsize{
+.promo-content-list-item2{
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    min-width: 573px;
+    min-height: 258px;
+    color: #FFFFFF;
+    flex-grow: 0;
+    background: url(/img/darken.png), url(/img/promo-img2.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.promo-content-list-item3{
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    min-width: 573px;
+    min-height: 258px;
+    color: #FFFFFF;
     flex-grow: 1;
+    background: url(/img/darken.png), url(/img/promo-img3.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
-.promo-list-title {
+.promo-list-title{
     margin: 0;
     margin-bottom: 15px;
+    color: #FFFFFF;
+    font-family: Muller;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.promo-list-title.big-size{
+    color: #FFF;
+    font-family: Muller;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .price-content-item {
     margin: 0;
     margin-bottom: 47px;
+    color: #FFF;
+    font-family: Muller;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.descr-content-item{
+    color: #F0BF5F;
+    font-family: Muller;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 
@@ -150,47 +258,178 @@ body {
     line-height: 25px;
 }
 
+.section-title.about-us{
+    /*color: #333;*/
+    /*font-family: Muller;*/
+    /*font-size: 40px;*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*line-height: normal;*/
+}
+
+.section-descr.about{
+    margin-bottom: 70px;
+    max-width: 888px;
+    color: #000;
+    font-family: Muller;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+}
+
 /* Services */
 
 .services-content-list{
     flex-wrap: wrap;
+    /*align-items: stretch;*/
+    /*flex-direction: column;*/
     gap: 24px;
+    margin-bottom: 70px;
+
 }
 
-.section-title .service {
-    margin: 0;
-    margin-bottom: 20px;
+.section-title.service {
+    /*margin: 0;*/
+    /*margin-bottom: 20px;*/
+    /*font-family: Muller;*/
+    /*font-size: 40px;*/
+    /*font-style: normal;*/
+    /*font-weight: 700;*/
+    /*line-height: normal;*/
 }
 
 .services-content-list-item {
     flex-direction: column;
-    width: 573px;
-    outline: solid 1px coral;
+    padding-left: 30px;
+    min-width: 573px;
+    min-height: 330px;
+    border-radius: 15px;
+    background: #FFF;
+    align-items: flex-start;
+    justify-content: flex-end;
 
+
+}
+
+.services-content-list-item.list-item1{
+    background-image: url("../img/service-img1.jpg");
+    background-repeat: no-repeat;
+}
+
+.services-content-list-item.list-item2{
+    background-image: url("../img/service-img2.jpg");
+    background-repeat: no-repeat;
+}
+
+.services-content-list-item.list-item3{
+    background-image: url("../img/service-img3.jpg");
+    background-repeat: no-repeat;
+}
+
+.services-content-list-item.list-item4{
+    background-image: url("../img/service-img4.jpg");
+    background-repeat: no-repeat;
+}
+
+.services--block-seemore{
+    color: #C93;
+    font-family: Muller;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%;
+}
+
+.services-blocktext-preview{
+    max-width: 402px;
+    /*max-height: 64px;*/
+    color: #000;
+    font-family: Muller;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    /*align-content: baseline;*/
 }
 
 
 
 /* Advantages */
 
+.section-title.advantages{
+    /*font-family: Muller;*/
+    /*font-size: 40px;*/
+    /*font-style: normal;*/
+    /*font-weight: 700;*/
+    /*line-height: normal;*/
+}
+
 .advantages-content-list{
     flex-wrap: wrap;
     gap: 20px;
+    margin-bottom: 70px;
+    justify-content: center;
 
 }
 
 .advantages-content-list-item{
     width: 276px;
     height: 276px;
-    outline: solid 1px coral;
+    border-radius: 15px;
+    background: #FFF;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: baseline;
+}
+
+.advantages-content-list-item.adv-item1{
+    background-image: url("../img/advant1.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    /*top: 30px;*/
+    /*left: 30px;*/
+
+}
+
+.advantages-content-list-item.adv-item2{
+    background-image: url("../img/advant2.png");
+    background-repeat: no-repeat;
+
+}
+
+.advantages-content-list-item.adv-item3{
+    background-image: url("../img/advant4.png");
+    background-repeat: no-repeat;
+}
+
+.advantages-content-list-item.adv-item4{
+    background-image: url("../img/advant4.png");
+    background-repeat: no-repeat;
 }
 
 .advantages-text-descr{
-    text-align: center;
+    max-width: 189px;
+    max-height: 128px;
     line-height: 15px;
+    margin-bottom: 32px;
+    color: #000;
+    font-family: Muller;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
 }
 
 /* Placement */
+.section-title.placement{
+    /*font-family: Muller;*/
+    /*font-size: 40px;*/
+    /*font-style: normal;*/
+    /*font-weight: 700;*/
+    /*line-height: normal;*/
+}
+
 .placement-content-list{
     flex-wrap: wrap;
     gap: 24px;
