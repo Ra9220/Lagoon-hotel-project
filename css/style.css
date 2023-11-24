@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -160,11 +160,11 @@ body {
 .promo-content-list{
     flex-wrap: wrap;
     flex-direction: column;
-    width: 573px;
+    max-width: 1200px;
     height: 540px;
     gap: 24px;
     justify-content: flex-start;
-    align-items: stretch;
+    /*align-items: stretch;*/
     margin-bottom: 70px;
 }
 
@@ -172,7 +172,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding-left: 30px;
-    min-width: 573px;
+    max-width: 573px;
     min-height: 258px;
     color: #FFFFFF;
     flex-grow: 0;
@@ -187,7 +187,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding-left: 30px;
-    min-width: 573px;
+    max-width: 573px;
     min-height: 258px;
     color: #FFFFFF;
     flex-grow: 0;
@@ -202,7 +202,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding-left: 30px;
-    min-width: 573px;
+    max-width: 573px;
     min-height: 258px;
     color: #FFFFFF;
     flex-grow: 1;
@@ -420,9 +420,8 @@ body {
 /*}*/
 
 .advantages-text-descr{
-    /*position: relative;*/
     max-width: 189px;
-    max-height: 128px;
+    min-height: 128px;
     margin-bottom: 32px;
     color: #000;
     font-family: Muller;
@@ -568,7 +567,204 @@ body {
 }
 
 
+/* Section Form-Action */
 
+.section-form-action{
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 1170px;
+    height: 256px;
+    border-radius: 15px;
+    background: #E9E9E9;
+    margin-bottom: 70px;
+}
+
+.section-title.form-action{
+    padding-left: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: normal;
+    color: #333333;
+    padding-top: 45px;
+    margin-bottom: 20px;
+}
+
+.form-action-select{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+    width: 1080px;
+    min-height: 106px;
+    border-radius: 15px;
+    background: #FFF;
+    padding: 31px 28px;
+
+}
+
+.form-select-city{
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-select-country{
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-select-date{
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-select-days{
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-select-peoples{
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-action-btn{
+    padding: 13px 30px;
+    border-radius: 10px;
+    border: 1px solid #C93;
+    height: 42px;
+    color: #C93;
+}
+
+/* Section Contacts */
+
+.container-section-contacts{
+    margin: 0 auto;
+    width: 1170px;
+    height: 618px;
+    border-radius: 15px;
+    padding: 45px 45px;
+    background: #FFF;
+    background-image: url("../img/contact-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 653px;
+    margin-bottom: 70px;
+}
+
+.section-title.contacts{
+    color: #333;
+    margin-left: 42px;
+    font-family: Muller;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container-section-contact-leftpart{
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 450px;
+    min-height: 528px;
+
+}
+
+.contacts-block{
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.contact-left{
+    flex: 1 20%;
+    color: #000;
+    font-family: Muller;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contact-right {
+    flex: 1 30%;
+    flex-direction: column;
+
+
+}
+
+/* Footer */
+
+.footer{
+    margin: 0 auto;
+    padding: 45px;
+    max-width: 1170px;
+    min-height: 341px;
+    border-radius: 15px;
+    background: #333;
+    margin-bottom: 20px;
+    background-image: url("../img/footer-backimg.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.container.footer-contacts{
+    justify-content: space-between;
+    flex-direction: column;
+
+
+}
+
+
+.footer-block-contact{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-left-contact{
+
+    flex-grow: 1;
+
+}
+
+.footer-center-contact{
+
+    flex-grow: 1;
+    align-items: baseline ;
+
+}
+
+.footer-right-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.footer-right-contact-overflow {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-contact-descr{
+    width: 302px;
+    color: #FFF;
+    font-family: Muller;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.center-contact-descr{
+    color: #C93;
+    font-family: Muller;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
 
 
 
